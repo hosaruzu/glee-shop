@@ -1,0 +1,123 @@
+.insights {
+
+  background: linear-gradient(to bottom, white 60%, $orange-light 40%);
+  padding-bottom: 50px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: auto;
+    @extend %dmsans-700;
+    color: $black-title;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: auto;
+    color: $black-title;
+    @extend %dmsans-700;
+    position: relative;
+    padding-right: 25px;
+    transition: .5s all;
+
+    &:after {
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 6.1px;
+      height: 10.97px;
+      top: 3px;
+      right: 0;
+    }
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__card {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    height: 420px;
+    width: 370px;
+    border-radius: 4px;
+    transition: .4s all;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &:hover {
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.12);
+    }
+  }
+
+  &__card-img {
+    max-width: 370px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &__card-tag {
+    position: absolute;
+    background-color: $blue;
+    color: #fff;
+    @extend %poppins-700;
+    font-size: 14px;
+    line-height: 20px;
+    height: 30px;
+    width: 105px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 157px;
+    left: 25px;
+  }
+
+  &__card-content {
+    padding: 30px 15px 15px 30px;
+  }
+
+  &__card-title {
+    @extend %dmsans-500;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    height: 75px;
+    transition: .4s all;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__card-titlelink {
+    color: $black-title;
+
+  }
+
+  &__card-meta {
+    margin-top: 12px;
+    display: flex;
+    @extend %dmsans-400;
+    font-size: 12px;
+    line-height: 2.5;
+  }
+
+  &__card-author {
+    margin-left: 25px;
+    color: $black-title;
+  }
+}

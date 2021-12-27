@@ -17,6 +17,13 @@ body {
 
 body {
 	font-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main {
+	flex-grow: 1;
 }
 
 ul,
@@ -35,6 +42,10 @@ h6 {
 ol[class],
 ul[class] {
 	list-style: none;
+}
+
+a {
+	text-decoration: none;
 }
 
 .flex {
@@ -69,4 +80,10 @@ ul[class] {
 
 .--dir-col {
 	flex-direction: column;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1180px;
+	padding: 0 10px;
 }
