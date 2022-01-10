@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var splide = new Splide('.splide', {
     type: 'slide',
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     rewind: true
   });
 
