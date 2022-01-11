@@ -106,6 +106,7 @@ a {
 
 .tabs {
 	text-align: center;
+	overflow: hidden;
 
 	&__list {
 		display: flex;
@@ -113,13 +114,26 @@ a {
 		gap: 30px;
 	}
 
-	&__link {
+	&__btn {
 		@extend %dmsans-700;
 		font-size: 16px;
 		color: #8b8b8b;
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		cursor: pointer;
+		transition: .3s all;
+
+		&:hover {
+			opacity: .8;
+		}
 
 		&--active {
 			color: #191919;
+
+			&:hover {
+				opacity: 1;
+			}
 		}
 	}
 }
@@ -132,6 +146,10 @@ a {
 	border-radius: 10px;
 	position: relative;
 	overflow: hidden;
+
+	&__inner {
+		display: none;
+	}
 
 	&:hover {
 		.product__nav {
@@ -161,7 +179,7 @@ a {
 		transform: translateY(-950%);
 		display: flex;
 		gap: 16px;
-		transition: .4s all
+		transition: .5s ease;
 	}
 
 	&__link {
@@ -198,5 +216,19 @@ a {
 		@extend %dmsans-700;
 		line-height: 40px;
 		color: #a3bbc8;
+	}
+}
+
+.tabcontent {
+	animation: fadeEffect 1.3s;
+}
+
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
 	}
 }
