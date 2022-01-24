@@ -3,8 +3,7 @@ const bs = require('browser-sync');
 module.exports = function bs_html() {
 	bs.init({
 		server: {
-			baseDir: 'build/',
-			host: '192.168.0.104',
+			baseDir: 'build/'
 		},
 		callbacks: {
 			ready: function (err, bs) {
@@ -16,11 +15,6 @@ module.exports = function bs_html() {
 				});
 			}
 		},
-		browser: 'chrome',
-		logPrefix: 'BS-HTML:',
-		logLevel: 'info',
-		logConnections: true,
-		logFileChanges: true,
-		open: true
+		browser: 'Google Chrome'
 	})
 }
