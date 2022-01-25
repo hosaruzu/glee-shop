@@ -1,5 +1,6 @@
 const plugins = [
-	"node_modules/@splidejs/splide/dist/js/splide.min.js"
+	"node_modules/@splidejs/splide/dist/js/splide.min.js",
+	"node_modules/tabbyjs/dist/js/tabby.min.js",
 ];
 const {
 	src,

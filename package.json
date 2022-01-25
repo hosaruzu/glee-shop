@@ -41,6 +41,8 @@
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
     "require-dir": "^1.2.0",
+    "tabbyjs": "^12.0.3",
+    "tabs": "^0.2.0",
     "vinyl-ftp": "^0.6.1"
   }
 }
