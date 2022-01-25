@@ -1,6 +1,8 @@
 const plugins = [
 	"node_modules/@splidejs/splide/dist/css/splide.min.css",
-	"node_modules/tabbyjs/dist/css/tabby-ui.min.css"
+	"node_modules/tabbyjs/dist/css/tabby-ui.min.css",
+	"node_modules/lightgallery/css/lightgallery.css",
+	"node_modules/lightgallery/css/lightgallery-bundle.css"
 ];
 
 const {

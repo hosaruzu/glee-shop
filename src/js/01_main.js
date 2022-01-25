@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   splide.mount();
 });
 
+
 function openTab(evt, tabName) {
   let i, tabcontent, tablinks;
 
