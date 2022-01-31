@@ -232,3 +232,31 @@ a {
 		opacity: 1;
 	}
 }
+
+.breadcrumbs {
+	&__list {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		@extend %rubik-400;
+		color: #888c91;
+	}
+
+	&__item {
+		position: relative;
+
+		&:not(:last-child)::after {
+			position: absolute;
+			content: " / ";
+			top: 1px;
+			left: 51px;
+		}
+
+	}
+
+	&__link {
+		color: inherit;
+
+
+	}
+}
