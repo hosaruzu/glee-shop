@@ -1,0 +1,88 @@
+.team {
+  padding: 120px 0 160px;
+
+  &__inner {
+    display: flex;
+    gap: 80px;
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    width: 310px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-bottom: 45px;
+  }
+
+  &__link {
+    padding: 18px 60px 18px 18px;
+    border-radius: 5px;
+    background-color: #a3bbc8;
+    text-decoration: none;
+    color: #fff;
+    @extend %poppins-700;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 24px;
+
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 30px;
+  }
+
+  &__member {
+    position: relative;
+  }
+
+  &__member-box {
+    position: absolute;
+    width: 324px;
+    height: 110px;
+    display: flex;
+    gap: 56px;
+    align-items: center;
+    background-color: #fff;
+    bottom: -60px;
+    left: 0;
+    padding-left: 24px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  }
+
+  &__member-name {
+    @extend %dmsans-700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #436372;
+    margin-bottom: 10px;
+  }
+
+  &__member-position {
+    color: #565872;
+    line-height: 30px;
+
+  }
+
+
+  &__member-socials {
+    display: flex;
+    gap: 7px;
+  }
+}
