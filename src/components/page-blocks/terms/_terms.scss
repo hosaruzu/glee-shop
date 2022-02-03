@@ -1,0 +1,35 @@
+.terms {
+  padding: 120px 0;
+  color: #243f4d;
+
+  &__title {
+    font-size: 24px;
+    line-height: 40px;
+    color: #243f4d;
+    @extend %rubik-500;
+    margin-bottom: 24px;
+
+  }
+
+  &__list {
+    line-height: 30px;
+    padding-left: 30px;
+    list-style: decimal-leading-zero !important;
+
+  }
+
+  &__list-item {
+    padding-left: 10px;
+    margin-bottom: 68px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Glee Main",
+"description":"Glee furniture shop main page",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	<header class="header">
+		<div class="header__container large-container">
+			<div class="header__inner">
+				<a class="logo" href="index.html">
+					<img class="logo__img" src="img/logo.png" alt="Logo of Glee">
+				</a>
+				<ul class="header__nav">
+					<li class="header__nav-item">
+						<a class="header__nav-link" href="index.html">Home +</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-link" href="about.html">About</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-link" href="#">Services</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-link" href="#">Pages +</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-link" href="#">News</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+				<div class="header__nav-box nav-box">
+					<a class="nav-box__search" href="#">
+						<img class="nav-box__search-img" src="img/sprite.svg#include--nav-search" width="15"
+							height="15" alt="Search item here">
+					</a>
+					<div class="nav-box__double-item">
+						<a class="nav-box__favorite" href="#">
+							<img class="nav-box__favorite-img" src="img/sprite.svg#include--nav-favorite"
+								width="18" height="16" alt="Favorite items here">
+							<span>0</span>
+						</a>
+						<a class="nav-box__cart" href="#">
+							<img class="nav-box__cart-img" src="img/sprite.svg#include--nav-cart" width="19"
+								height="17" alt="Cart items here">
+							<span>0</span>
+						</a>
+					</div>
+					<a class="nav-box__menu" href="#">
+						<img class="nav-box__menu-img" src="img/sprite.svg#include--nav-menu" width="20"
+							height="20" alt=" Menu here">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="page-head">
+			<div class="container">
+				<h1 class="page-head__title">
+					Terms & Conditions
+				</h1>
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="index.html">Home</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link">Terms & Conditions</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		@@include('components/page-blocks/terms/_terms.html')
+		@@include('components/page-blocks/insights/_insights.html')
+		@@include('components/page-blocks/partners/_partners.html')
+	</main>
+	@@include('components/page-blocks/footer/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
