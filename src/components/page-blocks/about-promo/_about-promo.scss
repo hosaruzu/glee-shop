@@ -1,0 +1,23 @@
+.about-promo {
+  padding: 88px 0 82px;
+  background-color: #fcd7b6;
+  text-align: center;
+  @extend %dmsans-700;
+  color: #243f4d;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  &__title {
+    padding: 20px 0;
+    font-size: 36px;
+    line-height: 32px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+  }
+}
