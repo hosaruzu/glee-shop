@@ -1,0 +1,113 @@
+.login {
+  padding: 120px 0;
+  margin: 0 auto;
+  max-width: 470px;
+  color: #436372;
+
+  &__label {
+    display: block;
+    font-size: 14px;
+    line-height: 36px;
+
+    &--checkbox {
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 58px;
+    background-color: transparent;
+    border: 2px solid #f6f6f6;
+    margin-bottom: 26px;
+    padding: 10px;
+  }
+
+  &__submit {
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #a3bbc8;
+    padding: 20px 0;
+    font-size: 14px;
+    @extend %rubik-500;
+    border: none;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+
+  &__remember-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f6f6f6;
+  }
+
+  &__remember-text {
+    font-size: 14px;
+    line-height: 48px;
+  }
+
+  &__input-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:checked+.login__checkbox::before {
+      background-image: url("/img/svg/check-solid.svg");
+    }
+  }
+
+
+  &__checkbox {
+    display: inline-flex;
+    align-items: flex-end;
+    user-select: none;
+    position: relative;
+    margin-right: 27px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      bottom: -3px;
+      border-radius: 2px;
+      margin-right: 13px;
+      background-color: #ebebeb;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 80% 80%;
+    }
+  }
+
+  &__register {
+    padding-top: 30px;
+  }
+
+  &__register-text {
+    text-align: center;
+    margin-bottom: 26px;
+    line-height: 24px;
+  }
+
+  &__register-link {
+    @extend %rubik-500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #243f4d;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #a3bbc8;
+    padding: 20px 0;
+    transition: .3s all;
+
+    &:hover {
+      border-color: #243f4d;
+    }
+  }
+}
