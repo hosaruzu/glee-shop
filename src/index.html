@@ -1,26 +1,19 @@
 <!DOCTYPE html>
-@@include('components/page-blocks/_head.html',{
-"lang":"en",
-"title":"Glee Main",
-"description":"Glee furniture shop main page",
-"keywords":"",
-"favicon":"img/favicons/favicon",
-})
+@include('partials/head.html')
 
 <body>
-	@@include('components/page-blocks/header/_header.html')
+	@include('partials/_header.html')
 	<main class="main">
-		@@include('components/page-blocks/top-slider/_top-slider.html')
-		@@include('components/page-blocks/benefits/_benefits.html')
-		@@include('components/page-blocks/products/_products.html')
-		@@include('components/page-blocks/promo/_promo.html')
-		@@include('components/page-blocks/new-design/_new-design.html')
-		@@include('components/page-blocks/video-block/_video-block.html')
-		@@include('components/page-blocks/insights/_insights.html')
-		@@include('components/page-blocks/partners/_partners.html')
+		<!-- @include('partials/_top-slider.html')
+		@include('partials/_benefits.html')
+		@include('partials/_products.html')
+		@include('partials/_promo.html')
+		@include('partials/_new-design.html')
+		@include('partials/_video-block.html')
+		@include('partials/_insights.html')
+		@include('partials/_partners.html') -->
 	</main>
-	@@include('components/page-blocks/footer/_footer.html')
-	@@include('components/page-blocks/_scripts.html')
+	<!-- @include('partials/_footer.html') -->
 </body>
 
 </html>
