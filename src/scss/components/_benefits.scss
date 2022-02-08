@@ -14,7 +14,7 @@
     align-items: center;
 
     &:first-child {
-      width: 568px;
+      width: 558px;
     }
 
     &:nth-child(2) {
@@ -37,7 +37,7 @@
   &__title {
     @extend %dmsans-700;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 2px;
     color: #414141;
   }
 

@@ -2,6 +2,11 @@ ul[class] {
   list-style: none;
 }
 
+body {
+  @extend %rubik-400;
+  font-size: 16px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1180px;
@@ -19,7 +24,7 @@ ul[class] {
   font-size: 36px;
   line-height: auto;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   color: #191919;
 }
 
@@ -27,13 +32,15 @@ ul[class] {
   text-align: center;
   overflow: hidden;
 
-  &__list {
+  &__nav {
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding: 0;
+    margin-bottom: 70px;
   }
 
-  &__btn {
+  &__nav-btn {
     @extend %dmsans-700;
     font-size: 16px;
     color: #8b8b8b;
@@ -47,12 +54,28 @@ ul[class] {
       opacity: .8;
     }
 
-    &--active {
+    &--active,
+    &:focus {
       color: #191919;
+      background-color: transparent;
 
       &:hover {
         opacity: 1;
       }
+    }
+  }
+
+  &__content {
+    padding-bottom: 35px;
+  }
+
+  &__panel {
+    display: none;
+
+    &--active {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 38px 30px;
     }
   }
 }
@@ -175,7 +198,5 @@ ul[class] {
 
   &__link {
     color: inherit;
-
-
   }
 }

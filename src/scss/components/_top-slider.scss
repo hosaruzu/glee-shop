@@ -51,10 +51,12 @@
       position: absolute;
       content: "";
       transform: translateY(-50%);
+      background: url("/img/sprite.svg#css--arrow-slider");
+      background-repeat: no-repeat;
       top: 50%;
       right: 18px;
       width: 22px;
-      height: 9px;
+      height: 20px;
     }
 
     &:hover {

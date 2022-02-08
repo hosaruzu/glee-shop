@@ -2,7 +2,9 @@
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
 // Определение операционной системы на мобильных
-import { mobileCheck } from "./functions/mobile-check";
+import {
+  mobileCheck
+} from "./functions/mobile-check";
 console.log(mobileCheck())
 
 // Определение ширины экрана
@@ -35,8 +37,7 @@ console.log(mobileCheck())
 
 // Реализация табов
 // import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
-
+// const tabs = new GraphTabs('[data-att]');
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
 

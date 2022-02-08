@@ -1,9 +1,11 @@
 .promo {
-  padding: 186px 0 104px;
+  padding: 160px 0 104px;
 
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -19,7 +21,7 @@
   &__img {
     position: absolute;
     top: -90px;
-    left: 128px;
+    left: 90px;
   }
 
   &__item-box {
