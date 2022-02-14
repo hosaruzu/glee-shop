@@ -34,10 +34,12 @@
       position: absolute;
       content: "";
       width: 15px;
-      height: 11px;
+      height: 15px;
       top: 50%;
       transform: translateY(-50%);
       right: 24px;
+      background: url("/img/sprite.svg#css--arrow-small-right");
+      background-repeat: no-repeat;
 
     }
   }

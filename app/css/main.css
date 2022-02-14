@@ -8,7 +8,7 @@
   font-weight: 400;
 }
 
-.login__register-link, .login__submit, .promo__link, .top-slider .splide__pagination__page, .top-slider__link, .top-slider__title, .header__nav-link {
+.terms__title, .login__register-link, .login__submit, .promo__link, .top-slider .splide__pagination__page, .top-slider__link, .top-slider__title, .header__nav-link {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
@@ -1384,12 +1384,14 @@ body {
   position: absolute;
   content: "";
   width: 15px;
-  height: 11px;
+  height: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 24px;
+  background: url("/img/sprite.svg#css--arrow-small-right");
+  background-repeat: no-repeat;
 }
 .team__gallery {
   display: -ms-grid;
@@ -1547,6 +1549,32 @@ body {
 }
 .login__register-link:hover {
   border-color: #243f4d;
+}
+
+.terms {
+  padding: 120px 0;
+  color: #243f4d;
+}
+.terms__title {
+  font-size: 24px;
+  line-height: 40px;
+  color: #243f4d;
+  margin-bottom: 24px;
+}
+.terms__list {
+  line-height: 30px;
+  padding-left: 30px;
+  list-style: decimal-leading-zero !important;
+}
+.terms__list-item {
+  padding-left: 10px;
+  margin-bottom: 68px;
+}
+.terms__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.terms__text:not(:last-child) {
+  margin-bottom: 70px;
 }
 
 .footer {
