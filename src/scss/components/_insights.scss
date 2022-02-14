@@ -28,12 +28,14 @@
     transition: .5s all;
 
     &:after {
+      content: "";
       position: absolute;
       background-repeat: no-repeat;
-      width: 6.1px;
-      height: 10.97px;
+      width: 12px;
+      height: 12px;
       top: 3px;
-      right: 0;
+      right: 3px;
+      background: url("/img/sprite.svg#arrow-right");
     }
 
     &:hover {
