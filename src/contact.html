@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('partials/head.html')
+@include('partials/head.html')
 
 <body>
   <header class="header">
@@ -72,10 +72,13 @@
         </div>
       </div>
     </div>
+    @include('partials/_contact.html')
     @include('partials/_insights.html')
     @include('partials/_partners.html')
   </main>
   @include('partials/_footer.html')
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" async>
+  </script>
 </body>
 
 </html>
